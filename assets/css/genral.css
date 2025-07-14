@@ -1,0 +1,60 @@
+/* === User Registration Page Background === */
+.user-register-wrapper {
+  background: linear-gradient(135deg, #fbe4ff, #dbc6d9); /* light lavender-pink blend */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* === User Registration Card (same as admin) === */
+.register-card {
+  background: #ffffff;
+  border-radius: var(--admin-radius);
+  box-shadow: var(--admin-shadow);
+  padding: 35px;
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-card h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #7f4668;
+  text-align: center;
+}
+
+.register-card .form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.register-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  transition: 0.3s;
+}
+
+.register-card .form-control:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+.register-card .btn-blushe {
+  background-color: #9f2d66;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.register-card .btn-blushe:hover {
+  background-color: #e4579d;
+  color: #fff;
+}

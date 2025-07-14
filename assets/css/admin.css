@@ -1,0 +1,289 @@
+/* =============================
+   ADMIN DASHBOARD BASE THEME
+   ============================= */
+
+/* ===== Variables ===== */
+:root {
+  --admin-primary: #a84c65;   /* Dusty Rose */
+--admin-secondary: #6C63FF; /* Lavender Indigo */
+--admin-bg: #F9F9FB;        /* Light gray-pink */
+--admin-dark: #2C3E50;
+--admin-text: #333;
+  --admin-light: #F4F6F9;    /* Light background */
+  --admin-radius: 12px;
+  --admin-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --admin-font: 'Poppins', sans-serif;
+}
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.admin-wrapper {
+  font-family: var(--admin-font);
+  background-color: var(--admin-light);
+  color: var(--admin-text);
+}
+
+/* ===== Container ===== */
+.admin-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== Headings ===== */
+.admin-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--admin-dark);
+  margin-bottom: 20px;
+}
+
+.admin-subtext {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* ===== Cards ===== */
+.admin-card {
+  background: var(--admin-white);
+  border-radius: var(--admin-radius);
+  box-shadow: var(--admin-shadow);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-3px);
+}
+
+.admin-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--admin-dark);
+}
+
+.admin-card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Buttons ===== */
+.admin-btn {
+  display: inline-block;
+  background: var(--admin-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--admin-radius);
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-btn:hover {
+  background-color: #e8435d;
+  transform: scale(1.03);
+  color: #fff;
+}
+
+/* ===== Grid (optional, like Bootstrap row/col) ===== */
+.admin-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-col-4 {
+  width: calc(33.333% - 20px);
+}
+
+@media (max-width: 768px) {
+  .admin-col-4 {
+    width: 100%;
+  }
+}
+
+/* ===== Spacing Helpers ===== */
+.mt-3 { margin-top: 1rem; }
+.mb-3 { margin-bottom: 1rem; }
+.p-3  { padding: 1rem; }
+.text-center { text-align: center; }
+.text-muted  { color: #999; }
+
+
+
+/* ===== Navbar & Header Styling ===== */
+.bg-pink {
+  background-color: var(--admin-primary) !important;
+}
+
+header.bg-pink {
+  background-color: var(--admin-primary);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.bg-pink h1,
+header.bg-pink p,
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Mobile nav button fix */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+/* ===== 3D Admin Header ===== */
+.admin-header {
+  background: linear-gradient(145deg, #8b354c, #b1678a);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+
+/* ===== 3D Admin Navbar ===== */
+.admin-navbar {
+  background: linear-gradient(145deg, #7f4668, #b097ac);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 10px 10px;
+}
+.navbar-brand img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-navbar .navbar-brand,
+.admin-navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.admin-navbar .nav-link:hover,
+.admin-navbar .navbar-brand:hover {
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* footer styling */
+/* ===== Admin Footer (Matches Navbar) ===== */
+.admin-footer {
+  background: linear-gradient(145deg, #7f4668, #b097ac);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 12px 12px 0 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* product table css */
+.table .btn-sm {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* register */
+/* === Admin Registration Form Styling === */
+.admin-register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px;
+  background: linear-gradient(135deg, #ffe3ec, #ffc2d1);
+  min-height: 100vh;
+}
+
+.admin-register-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  padding: 40px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-register-card h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #7f4668;
+  text-align: center;
+}
+
+.admin-register-card .form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.admin-register-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  transition: 0.3s;
+}
+
+.admin-register-card .form-control:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+.admin-register-card .btn-blushe {
+  background-color: #95406b;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.admin-register-card .btn-blushe:hover {
+  background-color: #b65183;
+  color: #fff;
+}
+
+.admin-register-card .form-text {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 5px;
+}
+
